@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hien thi so nguyen to dau tien</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    for (let number = 2; count <= 20;number++){
+        if (number < 2) {
+            continue;
+        } else if (number === 2) {
+            alert(number);
+            count++;
+        } else {
+            let isPrime = true;
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime === true){
+                alert(number);
+                count++;
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
